@@ -1,0 +1,323 @@
+
+  /*======================================
+  //--//-->   skills
+  ======================================*/
+
+  .service-box {
+    background-color: rgba(10, 10, 10, 0.555);
+    padding: 2.5rem 1.3rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .service-box:hover .ico-circle {
+    transition: all 500ms ease;
+    color: #fff;
+    background-color: #0078ff;
+    box-shadow: 0 0 0 10px #cde1f8;
+  }
+
+  .service-box:hover{
+    
+  }
+  
+  .service-box .service-ico {
+    margin-bottom: 1rem;
+    color: #1e1e1e;
+  }
+  
+  .service-box .ico-circle {
+    transition: all 500ms ease;
+    font-size: 4rem;
+  }
+  
+  .service-box .s-title {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    color: aliceblue;
+    padding: .4rem 0;
+  }
+  
+  .service-box .s-description {
+    color: #e7e7e7;
+  }
+  /* card */
+  .container-skills{
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .container-skills .card{
+    position: relative;
+    margin: 20px 0;
+    width: 300px;
+    height: 400px;
+    background: white;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+    box-shadow: inset 0px -380px 50px rgba(0,0,0,0.4);
+  }
+  @media (min-width:768px){
+  .container-skills .card:hover{
+    transform: perspective(2000px) rotate(0deg);
+    box-shadow: inset 0px 20px 50px rgba(0,0,0,0.4);
+  }
+  .container-skills .card .imgBox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    transform-origin: top;
+    z-index: 1;
+    transition: 1s;
+  }
+  .container-skills .card:hover .imgBox{
+    background: #135;
+    transform: translateY(90%);
+
+  }
+  .container-skills .card .imgBox span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .container-skills .card .imgBox span{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 75%;
+  }
+  .container-skills .card:hover .imgBox span{
+    color:#899;
+  }
+  .container-skills .card .details{
+    position: absolute;
+    top:0;
+    left:0;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+}
+@media (max-width:768px){
+  .container-skills{
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .container-skills .card{
+    box-shadow: none;
+  }
+}
+
+/* bars */
+.container-skills .card .details .skillBox{
+  box-sizing: border-box;
+  width: 100%;
+  margin: 10px 0;
+}
+.container-skills .card .details .skillBox p{
+  color:rgb(34, 34, 34);
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  padding: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.container-skills .card .details .skillBox p:nth-child(2){
+  float: right;
+  position: relative;
+  top:-35px;
+}
+.container-skills .card .details .skill {
+  background: #232323;
+  padding: 3px;
+  box-sizing: border-box;
+  border: 2px solid rgb(39, 104, 168);
+  border-radius: 2px;
+}
+@media (min-width:768px){
+  .container-skills .card .details .skillBox{
+    transition: 1s;
+    opacity: 0;
+  }
+  .container-skills .card:hover .details .skillBox{
+    opacity: 1;
+  }
+  .container-skills .card .details .skill_level{
+    background: #1399e7a8;
+    width: 0%;
+    height: 5px;
+    transition: 1s;
+  }
+}
+/*all skills queries*/
+@media (min-width:768px){
+  .container-skills .card .details .html5{
+    width:0%;
+    transition: 1s;
+  }
+  .container-skills .card .details .css{
+    width:0%;
+    transition: 1s;
+  }
+  .container-skills .card .details .js{
+    width:0%;
+    transition: 1s;
+  }
+  .container-skills .card .details .php{
+    width:0%;
+    transition: 1s;
+  }
+  .container-skills .card .details .c{
+    width:0%;
+    transition: 1s;
+  }
+  .container-skills .card .details .cpp{
+    width:0%;
+    transition: 1s;
+  }
+  .container-skills .card .details .java{
+    width:0%;
+    transition: 1s;
+  }
+  .container-skills .card .details .python{
+    width:0%;
+    transition: 1s;
+  }
+  .container-skills .card .details .AE{
+    width:0%;
+    transition: 1s;
+  }
+  .container-skills .card .details .photoshop{
+    width:0%;
+    transition: 1s;
+  }
+  .container-skills .card .details .linux{
+    width:0%;
+    transition: 1s;
+  }
+  .container-skills .card .details .p5{
+    width:0%;
+    transition: 1s;
+  }
+  .container-skills .card:hover .details .html5{
+    background: green;
+    width:90%;
+  }
+  .container-skills .card:hover .details .css{
+    width:80%;
+    background: green;
+  }
+  .container-skills .card:hover .details .js{
+    width:60%;
+    background: rgb(187, 226, 12);
+  }
+  .container-skills .card:hover .details .php{
+    width:95%;
+    background: green;
+  }
+  .container-skills .card:hover .details .c{
+    width:85%;
+    background: green;
+  }
+  .container-skills .card:hover .details .cpp{
+    width:90%;
+    background: green;
+  }
+  .container-skills .card:hover .details .java{
+    width:65%;
+    background: yellowgreen;
+  }
+  .container-skills .card:hover .details .python{
+    width:73%;
+    background: yellowgreen;
+  }
+  .container-skills .card:hover .details .AE{
+    width:45%;
+    background: yellow;
+  }
+  .container-skills .card:hover .details .photoshop{
+    width:65%;
+    background: yellowgreen;
+  }
+  .container-skills .card:hover .details .linux{
+    width:94%;
+    background: green;
+  }
+  .container-skills .card:hover .details .p5{
+    width:90%;
+    background: green; 
+  }
+}
+/*mobile anim strip */
+@media (max-width:768px){
+  .container-skills .card .details .skill_level{
+    background: #1399e7a8;
+    height: 5px;
+    border-right: 30px;
+  }
+  .container-skills .card span{
+    display: none;
+  }
+  .container-skills .card{
+    background: #454a9144;
+    padding: 10px;
+  }
+  .container-skills .card .details .html5{
+    background: green;
+    width:90%;
+  }
+  .container-skills .card .details .css{
+    width:80%;
+    background: green;
+  }
+  .container-skills .card .details .js{
+    width:60%;
+    background: rgb(187, 226, 12);
+  }
+  .container-skills .card .details .php{
+    width:95%;
+    background: green;
+  }
+  .container-skills .card .details .c{
+    width:85%;
+    background: green;
+  }
+  .container-skills .card .details .cpp{
+    width:90%;
+    background: green;
+  }
+  .container-skills .card .details .java{
+    width:65%;
+    background: yellowgreen;
+  }
+  .container-skills .card .details .python{
+    width:73%;
+    background: yellowgreen;
+  }
+  .container-skills .card .details .AE{
+    width:45%;
+    background: yellow;
+  }
+  .container-skills .card .details .photoshop{
+    width:65%;
+    background: yellowgreen;
+  }
+  .container-skills .card .details .linux{
+    width:94%;
+    background: green;
+  }
+  .container-skills .card .details .p5{
+    width:90%;
+    background: green; 
+  }
+}
