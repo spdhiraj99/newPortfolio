@@ -1,6 +1,10 @@
 /*======================================
   //--//-->   ABOUT
   ======================================*/
+  #about{
+    margin-bottom:50px;
+
+  }
   .mac-about{
     background: #3031319c;
     height: 100%;
@@ -84,6 +88,7 @@
   .mac-in{
     width:100%;
     height: 100%;
+    padding-top: 10px;
     background-color:#474646;
     border-bottom-right-radius: 12px;
   }
@@ -103,7 +108,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   }
-  .fa-linkedin:hover{
+  .fa-linkedin-in:hover{
     background: -webkit-radial-gradient(33% 100% circle, rgb(6, 190, 247) 4%, rgb(5, 43, 148) 30%, rgb(46, 114, 217) 62%, rgb(3, 47, 88) 85%, rgb(3, 11, 87));
   background: radial-gradient(circle at 33% 100%, rgb(6, 190, 247) 4%, rgb(5, 43, 148) 30%, rgb(46, 114, 217) 62%, rgb(3, 47, 88) 85%, rgb(3, 11, 87));
   -webkit-background-clip: text;

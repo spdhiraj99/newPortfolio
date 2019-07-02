@@ -2,47 +2,28 @@
   /*======================================
   //--//-->   skills
   ======================================*/
-
-  .service-box {
-    background-color: rgba(10, 10, 10, 0.555);
-    padding: 2.5rem 1.3rem;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    margin-bottom: 3rem;
-  }
   
-  .service-box:hover .ico-circle {
-    transition: all 500ms ease;
-    color: #fff;
+  .overlay-mf-skills {
     background-color: #0078ff;
-    box-shadow: 0 0 0 10px #cde1f8;
-  }
-
-  .service-box:hover{
-    
   }
   
-  .service-box .service-ico {
-    margin-bottom: 1rem;
-    color: #1e1e1e;
+  .overlay-mf-skills {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .7;
   }
   
-  .service-box .ico-circle {
-    transition: all 500ms ease;
-    font-size: 4rem;
+  .paralax-mf {
+    position: relative;
+    padding: 8rem 0;
   }
-  
-  .service-box .s-title {
-    font-size: 1.4rem;
-    text-transform: uppercase;
+  .container-skills{
     text-align: center;
-    font-weight: 600;
-    color: aliceblue;
-    padding: .4rem 0;
-  }
-  
-  .service-box .s-description {
-    color: #e7e7e7;
+    margin-top: 2%;
   }
   /* card */
   .container-skills{
@@ -60,12 +41,12 @@
     transform-style: preserve-3d;
     transform: perspective(2000px);
     transition: 1s;
-    box-shadow: inset 0px -380px 50px rgba(0,0,0,0.4);
+    box-shadow: inset 0px -380px 50px rgba(0, 78, 122, 0.4);
   }
   @media (min-width:768px){
   .container-skills .card:hover{
     transform: perspective(2000px) rotate(0deg);
-    box-shadow: inset 0px 20px 50px rgba(0,0,0,0.4);
+    box-shadow: inset 0px 20px 50px rgba(92, 63, 223, 0.4);
   }
   .container-skills .card .imgBox{
     position: relative;
@@ -91,9 +72,9 @@
     object-fit: cover;
   }
   .container-skills .card .imgBox span{
-    font-size: 3rem;
+    font-size: 7rem;
     text-align: center;
-    margin-top: 75%;
+    margin-top: 55%;
   }
   .container-skills .card:hover .imgBox span{
     color:#899;
@@ -102,6 +83,7 @@
     position: absolute;
     top:0;
     left:0;
+    width:100%;
     box-sizing: border-box;
     padding: 20px;
   }
