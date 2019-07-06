@@ -29,7 +29,7 @@
   box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3)
 }
 .project-container .pro-des a{
-  color:rgb(157, 162, 235);
+  color:rgb(51, 63, 236);
 }
 .imge{
   display: flex;
@@ -95,6 +95,11 @@
 @media only screen and (max-width:768px){
   .project-container .pro-des{
     padding-top:20px;
+  }
+  #sketchbarn{
+    width:75%;
+    height: 100%;
+
   }
   .imge{
     display:block;
