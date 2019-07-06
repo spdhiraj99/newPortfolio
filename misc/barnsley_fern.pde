@@ -25,11 +25,13 @@ w   a        b       c       d      e       f      p
 ƒ4 −0.04    0.2     0.16    0.04   0.083   0.12  0.07
 */
 
-float x=0,y=0;
-
+float x,y;
+int i;
 void setup(){
   size(600,600);
   background(0);
+  x=0;y=0;i=0;
+  noLoop();
 }
 
 void nextPoint(){
@@ -64,9 +66,20 @@ void drawPoint(){
   point(px,py);
 }
 
+void resetPaint(){
+  x=0;y=0;i=0;
+  background(0);
+  redraw();
+}
+
 void draw(){
-  for(int i=0;i<=100;i++){
-    drawPoint();
-    nextPoint();
+  if(i<500){
+    for(int j=0;j<100;j++){
+      drawPoint();
+      nextPoint();
+    }
+    i++;
+  }else{
+    noLoop();
   }
 }

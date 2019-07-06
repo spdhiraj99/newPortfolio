@@ -2,7 +2,11 @@
   //--//-->   PORTFOLIO
   ======================================*/
   
-  
+.project-container .buttons{
+  text-align: center;
+  margin:30px;
+} 
+
 .project-container .mobile-screenshot .imge img{
   max-width:650px;
   max-height: 300px;

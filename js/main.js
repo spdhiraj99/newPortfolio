@@ -120,13 +120,14 @@ var top0 = $('#home').offset().top;
 var top1 = $('#about').offset().top;
 var top2 = $('#skills').offset().top;
 var top3 = $('#work').offset().top;
+var top4 = $('#contact').offset().top;
 
 $(document).scroll(function() {
   var scrollPos = $(document).scrollTop();
   if (scrollPos >= top0 && scrollPos < top1) {
     $('.navbar').removeClass('bg-primary');
     
-  } else if (scrollPos >= top1 && scrollPos < top3) {
+  } else if (scrollPos >= top1 && scrollPos < top4) {
     $('.navbar').addClass('bg-primary');
 
   }
@@ -208,29 +209,6 @@ const next = () => {
 }
 next();
 	/*--/ Star Typed /--*/
-	if ($('.text-slider').length == 1) {
-    var typed_strings = $('.text-slider-items').text();
-		var typed = new Typed('.text-slider', {
-			strings: typed_strings.split(','),
-			typeSpeed: 80,
-			loop: true,
-			backDelay: 1100,
-			backSpeed: 30
-		});
-	}
-
-	/*--/ Testimonials owl /--*/
-	$('#testimonial-mf').owlCarousel({
-		margin: 20,
-		autoplay: true,
-		autoplayTimeout: 4000,
-		autoplayHoverPause: true,
-		responsive: {
-			0: {
-				items: 1,
-			}
-		}
-	});
 
 })(jQuery);
 

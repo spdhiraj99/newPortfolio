@@ -25,6 +25,8 @@
   <link href="css/portfolio.css" rel="stylesheet">
   <link href="css/skills.css" rel="stylesheet">
   
+  <!-- processing -->
+  <script type="text/javascript" src="./js/processing.min.js"></script>
 
 </head>
 
@@ -215,7 +217,7 @@
         </div>
         <div class="card">
             <div class="imgBox">
-              <span class="fas fa-pray"></span>
+              <span class="fas fa-laptop-code"></span>
             </div>
               <div class="details">
                 <h2 class="font-hacker">
@@ -353,13 +355,28 @@
               <p>PUBG Tournament handler.</p>
           </div>
         </div>
+        <div class="mt-5 mobile-screenshot fern">
+          <h2 class="font-hacker">Barnsley Fern</h2>
+          <div class="imge">
+            <canvas style = "max-width: 100%;" id="sketchbarn" data-processing-sources="./misc/barnsley_fern.pde"></canvas>
+          </div>
+          <div class="buttons">
+            <button class="btn btn-primary" id="startbarn">Start</button>
+            <button class="btn btn-warning" id="resetbarn">Reset</button>
+            <button class="btn btn-danger" id="stopbarn">Stop</button>
+          </div>
+          <div class="pro-des">
+            <div class="pin"></div>
+            <p>PUBG Tournament handler.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
   <!--/ Section Portfolio End /-->
 
   <!--/ Section Contact-Footer Star /-->
-  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+  <section id = "contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
     <div class="overlay-mf"></div>
     <div class="container">
       <div class="row">
@@ -373,10 +390,8 @@
                       Send Message Us
                     </h5>
                   </div>
-                  <div>
+                  <div class="contact_form">
                       <form action="" method="post" role="form" class="contactForm">
-                      <div id="sendmessage">Your message has been sent. Thank you!</div>
-                      <div id="errormessage"></div>
                       <div class="row">
                         <div class="col-md-12 mb-3">
                           <div class="form-group">
@@ -472,5 +487,7 @@
   <script src="lib/typed/typed.min.js"></script>
   
   <script src="js/main.js"></script>
+  <script src="js/work.js"></script>
+  <script src="js/contact.js"></script>
 </body>
 </html>
