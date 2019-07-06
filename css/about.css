@@ -125,7 +125,7 @@
     text-align: center;
   }
   .fa-file-download:hover{
-    background: linear-gradient(to bottom, rgb(255, 11, 11), rgb(11, 128, 0));
+    background: linear-gradient(to bottom, rgb(11, 198, 255), rgb(145, 195, 224));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -230,5 +230,27 @@ span.answer {
   .mac-col-left .logos{
     margin-left: 0;
     padding-left: 0;
+  }
+  .fa-github{
+    background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+  background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  .fa-linkedin-in{
+    background: -webkit-radial-gradient(33% 100% circle, rgb(6, 190, 247) 4%, rgb(5, 43, 148) 30%, rgb(46, 114, 217) 62%, rgb(3, 47, 88) 85%, rgb(3, 11, 87));
+  background: radial-gradient(circle at 33% 100%, rgb(6, 190, 247) 4%, rgb(5, 43, 148) 30%, rgb(46, 114, 217) 62%, rgb(3, 47, 88) 85%, rgb(3, 11, 87));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  .fa-twitter{
+    background: -webkit-radial-gradient(33% 100% circle, rgb(2, 135, 175) 4%, rgb(102, 117, 156) 30%, rgb(26, 92, 190) 62%, rgb(0, 87, 168) 85%, rgb(125, 133, 211));
+    background: radial-gradient(circle at 33% 100%, rgb(2, 135, 175) 4%, rgb(102, 117, 156) 30%, rgb(26, 92, 190) 62%, rgb(0, 87, 168) 85%, rgb(125, 133, 211));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .mac-about svg{
+    fill:#9acc14;
   }
 }

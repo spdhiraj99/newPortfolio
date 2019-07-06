@@ -22,7 +22,7 @@
     padding: 8rem 0;
   }
   .container-skills{
-    text-align: center;
+    /* text-align: center; */
     margin-top: 2%;
   }
   /* card */
@@ -52,7 +52,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    border: 1px solid #000;
+    border: 3px solid #000;
     box-sizing: border-box;
     transform-origin: top;
     z-index: 1;
@@ -61,7 +61,7 @@
   .container-skills .card:hover .imgBox{
     background: #135;
     transform: translateY(90%);
-
+    z-index: 2;
   }
   .container-skills .card .imgBox span{
     position: absolute;
@@ -74,7 +74,7 @@
   .container-skills .card .imgBox span{
     font-size: 7rem;
     text-align: center;
-    margin-top: 55%;
+    padding-top: 55%;
   }
   .container-skills .card:hover .imgBox span{
     color:#899;
@@ -119,6 +119,7 @@
   position: relative;
   top:-35px;
 }
+
 .container-skills .card .details .skill {
   background: #232323;
   padding: 3px;
